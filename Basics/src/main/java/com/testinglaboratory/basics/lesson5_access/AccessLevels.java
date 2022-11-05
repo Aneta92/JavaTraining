@@ -14,6 +14,24 @@ public class AccessLevels {
     static final public String sampleStaticText = "it must be";
     final public String sampleText = "it must be";
 
+    public int getNumberTwo(){
+        return numberTwo;
+    }
+
+    public int someInt;
+
+    public AccessLevels() {
+    }
+    public AccessLevels(int someInt) {
+        this.someInt = someInt;
+    }
+    public static void modify5(){
+        numberFive = 6;
+    }
+
+    public static void modify5(int someNumber){
+        numberFive = 6;
+    }
     //todo declare yours own variables
 
 }

@@ -3,19 +3,29 @@ package com.testinglaboratory.basics.lesson10_classes;
 import com.github.javafaker.Faker;
 
 public class Human {
+    @Override
+    public String toString() {
+        return "Human{" +
+                "race='" + race + '\'' +
+                ", name='" + name + '\'' +
+                ", height=" + height +
+                ", health=" + health +
+                ", sex='" + sex + '\'' +
+                '}';
+    }
 
-    String Race =  new Faker().demographic().race();
-    String Name = new Faker().name().name();
-    int height = new Faker().random().nextInt(100, 200);
-    double health = (double) new Faker().random().nextInt(0, 100);
-    String sex = new Faker().demographic().sex();
+    private final String race =  new Faker().demographic().race();
+    private final String name = new Faker().name().name();
+    private final int height = new Faker().random().nextInt(100, 200);
+    final double health = (double) new Faker().random().nextInt(0, 100);
+    final String sex = new Faker().demographic().sex();
 
     public String getRace() {
-        return Race;
+        return race;
     }
 
     public String getName() {
-        return Name;
+        return name;
     }
 
     public int getHeight() {

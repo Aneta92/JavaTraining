@@ -6,7 +6,7 @@ public class ClassConventions {
      */
     String field;
     String otherField;
-    int numberField = 10;
+    private int numberField = 10;
 
     /**
      * constructors

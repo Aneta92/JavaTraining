@@ -5,14 +5,19 @@ public class ConversionsAndCasting {
 
     public static void main(String[] args) {
         int otherNumber = -10;
+        System.out.println("Other number: " + otherNumber);
         double floatingPointNumber = 12.21;
         // conversion
 
         double castedFromInt = otherNumber;
-        System.out.println(castedFromInt);
+        System.out.println("Coverted number:" + castedFromInt);
         //casting
 
         int fromDouble = (int)floatingPointNumber;
+
+        Double classDouble = 2.2;
+        Integer fromClassDouble = classDouble.intValue();
+
         System.out.println("before casting " +floatingPointNumber + " after casting " +fromDouble);
 
         int value = 1/4;

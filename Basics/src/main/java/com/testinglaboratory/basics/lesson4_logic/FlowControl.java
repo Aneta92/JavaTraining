@@ -7,7 +7,7 @@ public class FlowControl {
         int firstNumberFromUser;
 
         Scanner scanner = new Scanner(System.in);
-
+/*
         System.out.println("type some number   ");
         firstNumberFromUser = scanner.nextInt();
 
@@ -45,11 +45,31 @@ public class FlowControl {
                 break;
             case 1:
                 System.out.println("I don't like 1 so I cant break it");
-
             default:
                 System.out.println("Whatcha doin' chaps?");
         }
+*/
+        System.out.println("How old are you?");
+        int age = scanner.nextInt();
 
+        if (age >= 18){
+            System.out.println("You are adult!");
+        } else if (age >= 0 && age < 18){
+            System.out.println("You are too young!");
+        } else {
+            System.out.println("The age is incorrect!");
+        }
+
+        switch (age) {
+            case 20:
+                System.out.println("You are adult!");
+                break;
+            case 15:
+                System.out.println("You are too young!");
+                break;
+            default:
+                System.out.println("The age is different than shown!");
+        }
     }
 
 }
