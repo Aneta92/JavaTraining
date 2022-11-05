@@ -16,5 +16,10 @@ public class NonPrimitive {
 
 
         //TODO declare 2 variables each type and print it.
+        Integer integerTestNumber = 5;
+        Double doubleNumber = 55.55;
+        Boolean velueOfBoolean = true;
+
+        System.out.println(integerTestNumber.intValue());
     }
 }
