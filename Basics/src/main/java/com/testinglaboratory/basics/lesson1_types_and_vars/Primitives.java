@@ -1,5 +1,7 @@
 package com.testinglaboratory.basics.lesson1_types_and_vars;
 
+import java.sql.SQLOutput;
+
 public class Primitives {
 
 
@@ -19,5 +21,16 @@ public class Primitives {
 
 
         //TODO declare 2 variables each type and print it.
+        int firstNumber = 20;
+        int secondNumber = 30;
+        System.out.println("The first number is: " + firstNumber + " , the second number is: " + secondNumber);
+
+        boolean logicalTrue = true;
+        boolean logicalFalse = false;
+        System.out.println("The true value is: " + logicalTrue + " , the false value is: " + logicalFalse);
+
+        double floatingNumber = 3.55;
+        float secondFloatNumber = 1.22f;
+        System.out.println(floatingNumber + " Second " + secondFloatNumber);
     }
 }
