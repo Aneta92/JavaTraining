@@ -33,7 +33,7 @@ public class LogicalOperator {
         System.out.println("is one is different than two? " + (seven1 != seven2));
 
         System.out.println(sevenString3.intern() == sevenString4.intern());
-        //System.out.println(sevenString3 == sevenString4);  - jeśli są zadeklarowane obiekty wyżej wtedy to da false, poniewąż pobiera z różnych miejsc w pamięci i w tym przypadku da false i bezpieczniejsze jest używanie equals
+        // System.out.println(sevenString3 == sevenString4);  - jeśli są zadeklarowane obiekty wyżej wtedy to da false, poniewąż pobiera z różnych miejsc w pamięci i w tym przypadku da false i bezpieczniejsze jest używanie equals
         // System.out.println(sevenString3.intern() == sevenString4.intern()); - w takim przypadku jest prawidłowa wartość jeśli doda się intern
 
         System.out.println(sevenString3.equals(sevenString4));

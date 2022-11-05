@@ -18,10 +18,10 @@ public class PlanetExperiment {
 
     public static void main(String[] args) {
         /**
-         * Welcome in a Planet Simulator. Compete the aplication
-         * 1. How many Man and Woman are living in simulaton
+         * Welcome in a Planet Simulator. Compete the application
+         * 1. How many Man and Woman are living in simulation
          * 2. how many man ar not real man
-         * 3. how many mans are disabled
+         * 3. how many man are disabled
          * 4. how many shoes are on planet
          * 5. what is average height
          * 6. and many many more, just use yours imagination

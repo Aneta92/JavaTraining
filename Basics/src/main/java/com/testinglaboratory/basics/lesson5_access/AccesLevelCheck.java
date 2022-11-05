@@ -35,7 +35,7 @@ public class AccesLevelCheck {
         System.out.println(accessLevels.sampleText);
         System.out.println(AccessLevels.sampleStaticText);
 
-//TODO try to increase or modify each variable
+        //TODO try to increase or modify each variable
     }
 
 
