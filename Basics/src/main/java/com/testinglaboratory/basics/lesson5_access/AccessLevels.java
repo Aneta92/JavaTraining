@@ -23,13 +23,16 @@ public class AccessLevels {
     public AccessLevels() {
     }
     public AccessLevels(int someInt) {
+
         this.someInt = someInt;
     }
     public static void modify5(){
+
         numberFive = 6;
     }
 
     public static void modify5(int someNumber){
+
         numberFive = 6;
     }
     //todo declare yours own variables

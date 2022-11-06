@@ -16,7 +16,8 @@ public class Woman extends Human {
                 '}';
     }
 
-    int bornChildren = new Faker().random().nextInt(10);
-    char breastSize = (char) (new Random().nextInt(26) + 'a');
-    int collectedShoes = new Faker().random().nextInt(100);
+    private final int bornChildren = new Faker().random().nextInt(10);
+    private final char breastSize = (char) (new Random().nextInt(26) + 'a');
+    private final int collectedShoes = new Faker().random().nextInt(100);
+
 }

@@ -17,19 +17,18 @@ public class PlanetExperiment {
     static int peopleOnPlanet = new Random().nextInt(1000);
 
     public static void main(String[] args) {
-        /**
-         * Welcome in a Planet Simulator. Compete the application
-         * 1. How many Man and Woman are living in simulation
-         * 2. how many man ar not real man
-         * 3. how many man are disabled
-         * 4. how many shoes are on planet
-         * 5. what is average height
-         * 6. and many many more, just use yours imagination
+        /*
+        *  Welcome in a Planet Simulator. Complete the application
+        *  1. How many Man and Woman are living in simulation
+        *  2. how many man ar not real man
+        *  3. how many man are disabled
+        *  4. how many shoes are on planet
+        *  5. what is average height
+        *  6. and many many more, just use yours imagination
          */
 
-
         createTheWorld();
-        printAllPeople();
+        //printAllPeople();
 
         Scanner scanner = new Scanner(System.in);
         int exitSignal = 1;
@@ -40,15 +39,25 @@ public class PlanetExperiment {
             switch (option) {
                 case 0:
                     exitSignal = 0;
-                    System.out.println("closing simulation");
-
+                    System.out.println("Closing simulation");
                     break;
                 case 1:
                     printAllPeople();
                     break;
                 case 2:
-                    //TODO complete the steps
+                    for (Human human: society) {
+                        if (human instanceof Man){
+                            System.out.println(human);
+                        }
+                    //System.out.println(human);
+                    }
+                    society.forEach( human -> {
+                            if(human instanceof  Man){
+                            System.out.println(human);}
+                    });
+                        society.stream().filter(it -> it instanceof Man).forEach(System.out::println);
                     break;
+
                 default:
                     System.out.println("Wrong option, try again");
             }
@@ -58,15 +67,16 @@ public class PlanetExperiment {
     }
 
     public static void printAllPeople() {
-        System.out.println("we have " + society.size() + "people on Planet");
+        System.out.println("We have " + society.size() + " people on planet.");
+        //society.forEach(System.out::println);
         for (Human h : society){
             System.out.println(h);
-            System.out.println(h);
+            //System.out.println(h);
         }
     }
 
     public static void createTheWorld() {
-        for (int counter = 0; counter <peopleOnPlanet; counter++){
+        for (int counter = 0; counter < peopleOnPlanet; counter++){
             if (counter % 3 == 0) {
                 society.add(new Man());
             } else {
@@ -74,4 +84,6 @@ public class PlanetExperiment {
             }
         }
     }
+
+
 }

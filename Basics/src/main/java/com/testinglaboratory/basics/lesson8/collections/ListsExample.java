@@ -6,7 +6,7 @@ import java.util.List;
 public class ListsExample {
 
     public static void main(String[] args) {
-        List<String> listsOfTexts = new ArrayList<String>();
+        List<String> listsOfTexts = new ArrayList<>();
 
         listsOfTexts.add("xxx");
         System.out.println(listsOfTexts.size());

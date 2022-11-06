@@ -5,8 +5,8 @@ public class AccesLevelCheck {
     static AccessLevels accessLevelsOne = new AccessLevels(10);
     static AccessLevels accessLevelsTwo = new AccessLevels(27);
     static AccessLevels accessLevelsFive = new AccessLevels();
+    //static AccessLevels accessLevels = new AccessLevels();
     static AccessLevels accessLevels = new AccessLevels();
-
     public static void main(String[] args) {
         example();
     }
